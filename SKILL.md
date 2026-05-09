@@ -23,8 +23,8 @@ Treat this as a research operating procedure, not a generic scraping task. The g
 
 ## Workflow
 
-0. **Opening prompt**: If the user starts the assistant without a research theme, use the branded opening in `references/intake.md` and ask for the brand/product/store/scenic spot/service to research. If the user already provides a theme, skip the opening and continue.
-1. **Intake**: Ask only for missing variables that affect research quality. Read `references/intake.md` when the theme, target sample size, region, time range, competitors, or output format is unclear.
+0. **Three-question intake gate**: At the start of every new research request, ensure these three inputs are explicit: research theme, core question, and research depth (`标准版` or `深度版`). If none are present, use the branded opening in `references/intake.md`. If only some are present, ask only for the missing items. Do not silently infer `标准版` from vague requests like "帮我调研一下" or "口碑怎么样".
+1. **Intake**: Ask only for missing variables that affect research quality after the three required inputs are complete. Read `references/intake.md` when the theme, depth, target sample size, region, time range, competitors, or output format is unclear.
 2. **Research brief and plan**: Convert the intake into a reusable execution prompt plus research口径 for user confirmation. Read `references/intake.md` for the confirmation prompt and `references/research-plan.md` for keyword matrix, sample scope, login gate, and collection rules.
 3. **Access gate**: For Xiaohongshu collection, ask the user to trigger `@电脑 / Computer Use` and use the local Chrome browser. Verify Xiaohongshu is logged in and that search results, note正文, and comments are visible. If access is blocked, pause and ask the user to complete login or browser-side verification. Do not enter collection until this is confirmed.
 4. **Formal collection**: After login/access is confirmed, directly collect Xiaohongshu search results, note text, comments, and reply comments according to the confirmed keyword plan. Preserve source URLs, collection time, publish time when visible, original evidence text, and note/comment relationships.

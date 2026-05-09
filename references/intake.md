@@ -1,6 +1,6 @@
 # Intake
 
-Use this when the user has not fully specified the research scope. Ask only the missing questions that materially affect collection and reporting.
+Use this when the user has not fully specified the research scope. The first interaction should collect three required inputs: research theme, core question, and research depth. Ask only the missing questions after that.
 
 ## Branded Opening Prompt
 
@@ -22,7 +22,7 @@ Use this only when the user starts the workflow without a clear research theme:
    - 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
 ```
 
-If the user already provides a theme, do not repeat this opening. Continue directly to the research-scope confirmation.
+If the user provides only a theme, or provides a theme plus a vague request such as "口碑怎么样", do not continue directly to the research-scope confirmation. Ask the missing required question(s), especially research depth.
 
 ## Minimum Required Inputs
 
@@ -30,7 +30,34 @@ If the user already provides a theme, do not repeat this opening. Continue direc
 - 核心判断问题: the decision or risk the user most wants to answer.
 - 调研深度: 标准版 or 深度版.
 
-Do not ask for a long form by default. Derive the remaining variables from the depth tier and ask follow-up questions only when they materially change collection quality, such as a required city/store, campaign time range, or competitor set.
+Do not ask for a long form by default. Do not silently default to 标准版. Derive the remaining variables from the confirmed depth tier and ask follow-up questions only when they materially change collection quality, such as a required city/store, campaign time range, or competitor set.
+
+## Missing Input Behavior
+
+- If all three required inputs are missing, send the full branded opening prompt.
+- If only the research theme is provided, ask:
+
+```text
+我已收到调研主题：【主题】。
+
+还需要确认 2 个问题：
+1. 你最想判断什么问题？
+2. 你需要哪种调研深度？标准版或深度版。
+```
+
+- If the theme and core question are provided but depth is missing, ask:
+
+```text
+我已收到：
+调研主题：【主题】
+核心判断问题：【问题】
+
+还需要确认调研深度：
+- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
+```
+
+- Only produce the research-scope confirmation after all three required inputs are explicit or the user confirms an inferred value.
 
 ## Useful Optional Inputs
 
