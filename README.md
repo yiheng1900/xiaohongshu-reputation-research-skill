@@ -84,10 +84,19 @@ Use $xiaohongshu-reputation-research
 默认会引导用户回答 3 个问题：
 
 ```text
+你好，我是毅恒小红书品牌调研小助手。
+
+请回答 3 个问题：
+
 1. 你要调研什么？
 2. 你最想判断什么问题？
-3. 你需要哪种调研深度？标准版或深度版。
+3. 你需要哪种调研深度？
+
+- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
 ```
+
+这段开场是固定流程：三项没有填完整前，不会进入关键词计划、调研口径或采集方案；也不会默认标准版。
 
 调研口径确认后，需要用户启用「电脑 / Computer Use」。建议提前安装或启用 Codex 的 Chrome 插件，并在本机 Chrome 浏览器中确认小红书已登录，且可以正常查看搜索结果、笔记正文和评论区。
 
@@ -197,10 +206,19 @@ Manual installation is also possible by placing this repository in your Codex sk
 The default intake asks three questions:
 
 ```text
+你好，我是毅恒小红书品牌调研小助手。
+
+请回答 3 个问题：
+
 1. What do you want to research?
 2. What is the key question you want to answer?
 3. What research depth do you need: standard or deep?
+
+- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
 ```
+
+This opening flow is fixed: before all three inputs are explicit, the Skill should not move into keyword planning, research-scope confirmation, or collection planning, and it should not default to the standard tier.
 
 After the research scope is confirmed, the user must enable **Computer Use**. It is recommended to enable or install the Codex **Chrome plugin** in advance, then confirm that Xiaohongshu is logged in through the local Chrome browser, with access to search results, note content, and comment sections.
 

@@ -1,6 +1,6 @@
 # Intake
 
-Use this when the user has not fully specified the research scope. The first interaction should collect three required inputs: research theme, core question, and research depth. Ask only the missing questions after that.
+Use this when the user has not fully specified the research scope. The first interaction must follow the fixed three-question intake. Do not add examples, do not rewrite the depth descriptions, and do not move into research planning until all three required inputs are explicit.
 
 ## Branded Opening Prompt
 
@@ -12,14 +12,11 @@ Use this only when the user starts the workflow without a clear research theme:
 请回答 3 个问题：
 
 1. 你要调研什么？
-   示例：iPhone 17 Pro Max / 河姆渡遗址公园 / 拉迷全屋定制
-
 2. 你最想判断什么问题？
-   示例：是否值得购买 / 是否易摔 / 真实口碑和主要问题
-
 3. 你需要哪种调研深度？
-   - 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
-   - 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
+
+- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
 ```
 
 If the user provides only a theme, or provides a theme plus a vague request such as "口碑怎么样", do not continue directly to the research-scope confirmation. Ask the missing required question(s), especially research depth.
@@ -30,7 +27,7 @@ If the user provides only a theme, or provides a theme plus a vague request such
 - 核心判断问题: the decision or risk the user most wants to answer.
 - 调研深度: 标准版 or 深度版.
 
-Do not ask for a long form by default. Do not silently default to 标准版. Derive the remaining variables from the confirmed depth tier and ask follow-up questions only when they materially change collection quality, such as a required city/store, campaign time range, or competitor set.
+Do not ask for a long form by default. Do not silently default to 标准版. Do not generate keywords, research scope, or collection plan before the three required inputs are explicit. Derive the remaining variables from the confirmed depth tier and ask follow-up questions only when they materially change collection quality, such as a required city/store, campaign time range, or competitor set.
 
 ## Missing Input Behavior
 
@@ -43,8 +40,12 @@ Do not ask for a long form by default. Do not silently default to 标准版. Der
 我已收到调研主题：【主题】。
 
 还需要确认 2 个问题：
+
 1. 你最想判断什么问题？
-2. 你需要哪种调研深度？标准版或深度版。
+2. 你需要哪种调研深度？
+
+- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
 ```
 
 - If the theme and core question are provided but depth is missing, ask:
@@ -57,11 +58,14 @@ Do not ask for a long form by default. Do not silently default to 标准版. Der
 核心判断问题：【问题】
 
 还需要确认调研深度：
+
 - 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
 - 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
 ```
 
-- Only produce the research-scope confirmation after all three required inputs are explicit or the user confirms an inferred value.
+- Only produce the research-scope confirmation after all three required inputs are explicit.
+- Do not infer a missing depth tier from the wording of the user's request.
+- Do not add examples, extra categories, or alternative depth descriptions in the intake response.
 
 ## Useful Optional Inputs
 
@@ -113,7 +117,10 @@ When the user wants a repeatable prompt for clients to confirm, generate a promp
 
 1. 你要调研什么？
 2. 你最想判断什么问题？
-3. 你需要哪种调研深度？标准版或深度版。
+3. 你需要哪种调研深度？
+
+- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
 
 请围绕【调研主题】在小红书公开内容中进行口碑调研。
 

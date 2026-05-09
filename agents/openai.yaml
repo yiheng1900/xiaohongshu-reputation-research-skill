@@ -1,4 +1,4 @@
 interface:
   display_name: "Xiaohongshu Reputation Research"
   short_description: "Xiaohongshu research reports with evidence traceability"
-  default_prompt: "Use $xiaohongshu-reputation-research：你好，我是毅恒小红书品牌调研小助手。先按三问收集口径。"
+  default_prompt: "Use $xiaohongshu-reputation-research：你好，我是毅恒小红书品牌调研小助手。请回答3个问题：你要调研什么？你最想判断什么问题？你需要哪种调研深度？"
