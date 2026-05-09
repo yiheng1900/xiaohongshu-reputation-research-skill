@@ -32,7 +32,7 @@ Treat this as a research operating procedure, not a generic scraping task. The g
 6. **Clean, dedupe, classify**: Classify account type, user stage, sentiment, dimensions, suspected advertising, authenticity level, valid sample flag, and core sample flag. Read `references/classification.md`.
 7. **Validate counts**: Run `scripts/validate_xhs_dataset.py` on the normalized CSV before writing final conclusions. Fix schema, denominator, or classification issues before continuing.
 8. **Management report**: Write the report from validated data, not from anecdotal impressions. Read `references/report-template.md`.
-9. **HTML visualization**: Build a polished HTML page using the same numbers as the report. Read `references/html-template.md`, then open and inspect the page in the browser.
+9. **HTML visualization**: Build a polished visual report using the same numbers as the report for both standard and deep depth unless the user explicitly removes it. It must use high-aesthetic management-report styling and remain clear, readable, and non-overlapping. Read `references/html-template.md`, then open and inspect the page in the browser.
 10. **Cloudflare Pages**: Deploy only after the user confirms the HTML and data. Read `references/cloudflare-pages.md` and verify current official Cloudflare instructions.
 11. **Final delivery**: Provide report link or local HTML path, raw data table path, evidence/method notes, and unresolved limitations.
 

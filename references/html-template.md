@@ -1,6 +1,6 @@
 # HTML Visualization
 
-Use this when turning the management report into a polished standalone HTML page.
+Use this when turning the management report into a polished standalone HTML visualization report. Standard and deep research both require a clear, high-aesthetic visualization deliverable unless the user explicitly removes it.
 
 ## Page Structure
 
@@ -27,12 +27,14 @@ Use this when turning the management report into a polished standalone HTML page
 
 ## Visual Style
 
-- Use a clean management dashboard style: restrained colors, high contrast, readable typography, and consistent spacing.
+- Use the best available visual judgment: a high-aesthetic management dashboard style with restrained colors, high contrast, readable typography, and consistent spacing.
+- Prioritize clarity over decoration. Every chart must be immediately legible, with visible labels, counts, denominators, and source-link affordances.
 - Avoid making the whole page one hue. Use neutral background, dark text, and limited accent colors.
 - Keep cards flat and purposeful. Do not nest cards inside cards.
 - Use tables for dense evidence and cards only for repeated insight blocks.
 - Make source links visible as "查看样本" or "来源链接".
 - Use responsive layout for desktop and mobile.
+- Verify that text, charts, tables, and cards remain clear and non-overlapping on desktop and mobile.
 
 ## Evidence Display
 

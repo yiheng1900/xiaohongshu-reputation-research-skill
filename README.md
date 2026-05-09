@@ -37,7 +37,7 @@ Use $xiaohongshu-reputation-research
 - 保存原始数据和证据链
 - 对样本进行去重、分类、情绪判断和证据等级标注
 - 生成管理层可读的口碑分析报告
-- 可选生成 HTML 可视化页面
+- 生成 HTML 可视化报告或页面
 - 可选部署到 Cloudflare Pages
 
 ## 适用于什么场景
@@ -92,8 +92,8 @@ Use $xiaohongshu-reputation-research
 2. 你最想判断什么问题？
 3. 你需要哪种调研深度？
 
-- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
-- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
+- 标准版：必须达到 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告 + 可视化报告。可视化报告必须使用最好的审美，清晰可见。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。可视化页面必须使用最好的审美，清晰可见。
 ```
 
 这段开场是固定流程：三项没有填完整前，不会进入关键词计划、调研口径或采集方案；也不会默认标准版。
@@ -108,7 +108,7 @@ Use $xiaohongshu-reputation-research
 - 原始采集记录：JSONL / collection log
 - 管理层调研报告：Markdown
 - 方法说明：methodology
-- 可选 HTML 可视化页面
+- HTML 可视化报告或页面
 - 可选 Cloudflare Pages 公开链接
 
 ## 注意事项
@@ -159,7 +159,7 @@ This Skill helps run an end-to-end Xiaohongshu reputation research workflow:
 - Saves raw data and evidence trails
 - Deduplicates, classifies, labels sentiment, and grades evidence strength
 - Generates a management-ready reputation research report
-- Optionally creates an HTML visualization page
+- Creates an HTML visualization report/page
 - Optionally deploys the HTML report to Cloudflare Pages
 
 ## Use Cases
@@ -214,8 +214,8 @@ The default intake asks three questions:
 2. What is the key question you want to answer?
 3. What research depth do you need: standard or deep?
 
-- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
-- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
+- 标准版：必须达到 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告 + 可视化报告。可视化报告必须使用最好的审美，清晰可见。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。可视化页面必须使用最好的审美，清晰可见。
 ```
 
 This opening flow is fixed: before all three inputs are explicit, the Skill should not move into keyword planning, research-scope confirmation, or collection planning, and it should not default to the standard tier.
@@ -230,7 +230,7 @@ Typical outputs include:
 - Raw collection records: JSONL / collection log
 - Management report: Markdown
 - Methodology notes
-- Optional HTML visualization page
+- HTML visualization report/page
 - Optional Cloudflare Pages public link
 
 ## Important Notes

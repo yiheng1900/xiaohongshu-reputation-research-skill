@@ -15,8 +15,8 @@ Use this only when the user starts the workflow without a clear research theme:
 2. 你最想判断什么问题？
 3. 你需要哪种调研深度？
 
-- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
-- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
+- 标准版：必须达到 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告 + 可视化报告。可视化报告必须使用最好的审美，清晰可见。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。可视化页面必须使用最好的审美，清晰可见。
 ```
 
 If the user provides only a theme, or provides a theme plus a vague request such as "口碑怎么样", do not continue directly to the research-scope confirmation. Ask the missing required question(s), especially research depth.
@@ -44,8 +44,8 @@ Do not ask for a long form by default. Do not silently default to 标准版. Do 
 1. 你最想判断什么问题？
 2. 你需要哪种调研深度？
 
-- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
-- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
+- 标准版：必须达到 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告 + 可视化报告。可视化报告必须使用最好的审美，清晰可见。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。可视化页面必须使用最好的审美，清晰可见。
 ```
 
 - If the theme and core question are provided but depth is missing, ask:
@@ -59,8 +59,8 @@ Do not ask for a long form by default. Do not silently default to 标准版. Do 
 
 还需要确认调研深度：
 
-- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
-- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
+- 标准版：必须达到 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告 + 可视化报告。可视化报告必须使用最好的审美，清晰可见。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。可视化页面必须使用最好的审美，清晰可见。
 ```
 
 - Only produce the research-scope confirmation after all three required inputs are explicit.
@@ -119,8 +119,8 @@ When the user wants a repeatable prompt for clients to confirm, generate a promp
 2. 你最想判断什么问题？
 3. 你需要哪种调研深度？
 
-- 标准版：约 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告。
-- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。
+- 标准版：必须达到 100 条有效反馈，适合判断主要口碑、优缺点和购买顾虑；输出原始数据表 + 完整报告 + 可视化报告。可视化报告必须使用最好的审美，清晰可见。
+- 深度版：尽量扩大样本池，优先接近 1000 条有效反馈；适合管理层汇报、问题归因和经营优化；输出原始数据表 + 深度报告 + 可视化页面。可视化页面必须使用最好的审美，清晰可见。
 
 请围绕【调研主题】在小红书公开内容中进行口碑调研。
 
@@ -146,8 +146,8 @@ Keep the generated prompt specific enough to execute, but avoid overpromising sa
 
 - Platform: Xiaohongshu only.
 - Data scope: public notes, comments, and reply comments.
-- Standard depth: target about 100 valid feedback samples; deliver raw data table and full management report.
-- Deep depth: expand the sample pool as much as feasible and prioritize approaching 1000 valid feedback samples; deliver raw data table, deep report, and HTML visualization unless the user says otherwise.
+- Standard depth: must reach 100 valid feedback samples; deliver raw data table, full management report, and visual report. If the confirmed public sample pool cannot reach 100 after exhaustive collection, state the shortfall and reason clearly instead of presenting it as completed.
+- Deep depth: expand the sample pool as much as feasible and prioritize approaching 1000 valid feedback samples; deliver raw data table, deep report, and high-aesthetic, clearly readable HTML visualization unless the user says otherwise.
 - Valid sample: specific experience, purchase intent, consultation, quote comparison, complaint, praise, concern, or meaningful discussion.
 - Core sample: valid non-marketing evidence with authenticity grade A, B, or C.
 - Time range: recent 12 months by default for current products/services; otherwise all visible public content when recency is not meaningful.
