@@ -1,5 +1,27 @@
 # Xiaohongshu Reputation Research Skill
 
+## 开始前先做这几步
+
+在使用这个 Skill 前，建议先完成以下准备：
+
+1. 在 Codex 中安装本 Skill：
+
+```text
+Use $skill-installer to install https://github.com/yiheng1900/xiaohongshu-reputation-research-skill
+```
+
+2. 安装完成后，重启 Codex，让新 Skill 生效。
+
+3. 建议提前在 Codex 插件中启用或安装 **Chrome 插件**。小红书调研通常还需要使用 **Computer Use / 电脑** 能力来操作本机浏览器。
+
+4. 在本机 Chrome 浏览器中登录小红书，并确认可以正常查看搜索结果、笔记正文和评论区。
+
+完成后，在 Codex 中调用：
+
+```text
+Use $xiaohongshu-reputation-research
+```
+
 ## 中文说明
 
 这是一个用于 **小红书公开内容口碑调研** 的 Codex Skill。它不是独立爬虫，也不是小红书官方 API 工具，而是一套可复用的 AI 调研工作流，用于指导 Codex 在用户授权的浏览器环境中，围绕品牌、产品、服务、门店、景区或其他话题进行公开样本采集、清洗、分类、分析和报告生成。
@@ -41,16 +63,22 @@
 
 ## 如何使用
 
-将本仓库放入 Codex Skill 目录，例如：
+推荐在 Codex 中通过 `skill-installer` 安装：
 
-```bash
-~/.codex/skills/xiaohongshu-reputation-research
+```text
+Use $skill-installer to install https://github.com/yiheng1900/xiaohongshu-reputation-research-skill
 ```
 
-在 Codex 中调用：
+安装后重启 Codex，然后调用：
 
 ```text
 Use $xiaohongshu-reputation-research
+```
+
+如果需要手动安装，也可以将本仓库放入 Codex Skill 目录，例如：
+
+```bash
+~/.codex/skills/xiaohongshu-reputation-research
 ```
 
 默认会引导用户回答 3 个问题：
@@ -61,7 +89,7 @@ Use $xiaohongshu-reputation-research
 3. 你需要哪种调研深度？标准版或深度版。
 ```
 
-调研口径确认后，需要用户启用「电脑 / Computer Use」，并在本机 Chrome 浏览器中确认小红书已登录，且可以正常查看搜索结果、笔记正文和评论区。
+调研口径确认后，需要用户启用「电脑 / Computer Use」。建议提前安装或启用 Codex 的 Chrome 插件，并在本机 Chrome 浏览器中确认小红书已登录，且可以正常查看搜索结果、笔记正文和评论区。
 
 ## 主要产出
 
@@ -88,6 +116,28 @@ Use $xiaohongshu-reputation-research
 ## English
 
 This repository contains a **Codex Skill for Xiaohongshu public reputation research**. It is not a standalone crawler and it is not an official Xiaohongshu API client. It is a reusable AI research workflow that guides Codex through collecting, cleaning, classifying, analyzing, and reporting publicly available Xiaohongshu notes and comments in a user-authorized browser environment.
+
+## Before You Start
+
+Before using this Skill, prepare Codex and the browser environment:
+
+1. Install this Skill in Codex:
+
+```text
+Use $skill-installer to install https://github.com/yiheng1900/xiaohongshu-reputation-research-skill
+```
+
+2. Restart Codex after installation so the new Skill is available.
+
+3. Preferably enable or install the **Chrome plugin** in Codex in advance. Xiaohongshu research usually also requires **Computer Use** to operate the local browser.
+
+4. Log into Xiaohongshu in the local Chrome browser and confirm that search results, note content, and comment sections are visible.
+
+Then invoke the Skill in Codex:
+
+```text
+Use $xiaohongshu-reputation-research
+```
 
 ## What This Skill Does
 
@@ -126,16 +176,22 @@ This Skill should not be used for:
 
 ## How To Use
 
-Place this repository in your Codex skills directory, for example:
+Recommended installation through Codex `skill-installer`:
 
-```bash
-~/.codex/skills/xiaohongshu-reputation-research
+```text
+Use $skill-installer to install https://github.com/yiheng1900/xiaohongshu-reputation-research-skill
 ```
 
-Invoke it in Codex:
+Restart Codex, then invoke:
 
 ```text
 Use $xiaohongshu-reputation-research
+```
+
+Manual installation is also possible by placing this repository in your Codex skills directory, for example:
+
+```bash
+~/.codex/skills/xiaohongshu-reputation-research
 ```
 
 The default intake asks three questions:
@@ -146,7 +202,7 @@ The default intake asks three questions:
 3. What research depth do you need: standard or deep?
 ```
 
-After the research scope is confirmed, the user must enable **Computer Use** and confirm that Xiaohongshu is logged in through the local Chrome browser, with access to search results, note content, and comment sections.
+After the research scope is confirmed, the user must enable **Computer Use**. It is recommended to enable or install the Codex **Chrome plugin** in advance, then confirm that Xiaohongshu is logged in through the local Chrome browser, with access to search results, note content, and comment sections.
 
 ## Outputs
 
