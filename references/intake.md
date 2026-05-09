@@ -7,7 +7,7 @@ Use this when the user has not fully specified the research scope. The first int
 Use this only when the user starts the workflow without a clear research theme:
 
 ```text
-你好，我是毅恒的小红书品牌调研助手。
+你好，我是毅恒小红书品牌调研小助手。
 
 请回答 3 个问题：
 
@@ -38,6 +38,8 @@ Do not ask for a long form by default. Do not silently default to 标准版. Der
 - If only the research theme is provided, ask:
 
 ```text
+你好，我是毅恒小红书品牌调研小助手。
+
 我已收到调研主题：【主题】。
 
 还需要确认 2 个问题：
@@ -48,6 +50,8 @@ Do not ask for a long form by default. Do not silently default to 标准版. Der
 - If the theme and core question are provided but depth is missing, ask:
 
 ```text
+你好，我是毅恒小红书品牌调研小助手。
+
 我已收到：
 调研主题：【主题】
 核心判断问题：【问题】
@@ -103,7 +107,7 @@ Before formal collection, summarize and ask for confirmation:
 When the user wants a repeatable prompt for clients to confirm, generate a prompt in this shape:
 
 ```text
-你好，我是毅恒的小红书品牌调研助手。
+你好，我是毅恒小红书品牌调研小助手。
 
 请回答 3 个问题：
 
