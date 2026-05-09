@@ -1,0 +1,4 @@
+interface:
+  display_name: "Xiaohongshu Reputation Research"
+  short_description: "Xiaohongshu research reports with evidence traceability"
+  default_prompt: "Use $xiaohongshu-reputation-research：请回答 3 个问题：你要调研什么？最想判断什么问题？需要标准版还是深度版？"
